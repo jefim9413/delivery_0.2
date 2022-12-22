@@ -6,7 +6,7 @@
   "author": "Jefferson Marques <jefferson.jsm3444@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev:server": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
