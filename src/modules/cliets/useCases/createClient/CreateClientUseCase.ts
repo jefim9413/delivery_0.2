@@ -1,0 +1,3 @@
+class CreateClientUseCase {}
+
+export { CreateClientUseCase };
