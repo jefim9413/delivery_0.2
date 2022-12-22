@@ -13,6 +13,9 @@ class CreateClientUseCase {
         },
       },
     });
+    if (clientExist) {
+      throw new Error(`Client ${username} already exists`);
+    }
   }
 }
 
