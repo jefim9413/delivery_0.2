@@ -19,12 +19,14 @@ class CreateClientUseCase {
     }
 
     const hasPassword = await hash(password, 10);
-    await prisma.clients.create({
+    const client = await prisma.clients.create({
       data: {
         username,
         password: hasPassword,
       },
     });
+
+    return client;
   }
 }
 
